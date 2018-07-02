@@ -8,7 +8,7 @@
                 <form id="receipt-form">
                     <div class="row">
                             <div class="col-md-3">
-                                    <input type="text" clas="form-control" name="receipt_no" placeholder="Receipt Number"><br/>
+                                    <input type="text" class="form-control" name="receipt_no" placeholder="Receipt Number"><br/>
                                     <span style="color:red" id="receipt_err"></span>
                             </div>
                             <div class="col-md-3 ">

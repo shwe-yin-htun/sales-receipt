@@ -10,7 +10,7 @@
                         Lingkaran Syed Putra,<br/>
                         59200 Kuala Lumpur<br/>
                     </p>
-                       <table align="center" style="margin-right:30%; width:400px;"> 
+                       <table align="center" style="margin-right:20%; width:400px;"> 
                          <thead>
                             <tr>
                                  <td colspan="2">Receipt No.{{$receipt->receipt_no}}</td>
