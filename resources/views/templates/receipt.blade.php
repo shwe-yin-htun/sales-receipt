@@ -18,11 +18,11 @@
                             </tr>
                             <tr>
                                  <td colspan="2">Shift No.1</td>
-                                 <td>{{date('d/m/Y')}}</td>
+                                 <td>{{$receipt->created_at->format('d/m/Y')}}</td>
                             </tr>
                             <tr>
                                  <td colspan="2">Cashier : SUPPORT </td>
-                                 <td>{{$receipt->created_at}}</td>
+                                 <td>{{$receipt->created_at->format('d/m/Y h:i:s')}}</td>
                             </tr>
                             <tr>
                                  <td colspan="2">DINE-IN</td>
