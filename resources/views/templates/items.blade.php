@@ -45,7 +45,7 @@
                                 <td id="td_price">{{$item->price}}</td>
                                 <td>{{$item->is_set}}</td>
                                 <td>
-                                    <button class="btn btn-success" id="edit" data-id="{{$item->id}}">
+                                    <button class="btn btn-primary" id="edit" data-id="{{$item->id}}">
                                         <i class="fa fa-edit" aria-hidden="true"></i> 
                                     </button>
                                     <button class="btn btn-danger" id="delete" data-id="{{$item->id}}">
