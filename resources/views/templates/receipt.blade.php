@@ -1,10 +1,33 @@
 @extends('master')
 @section('content')
-     <div class="container" style="margin-top:20px;">
+<style>
+.container{
+    margin-top:20px
+}
+#receipt{
+    margin-left: 15%;
+    background: #8b86860f;
+}
+#qty{
+    width:40px;
+    border-top:dotted; 
+    border-bottom:dotted;
+}
+#item{
+    border-top:dotted; 
+    border-bottom:dotted;
+}
+p{
+    text-align:center;
+    margin-top: 20px;
+    margin-left: -15%;
+}
+</style>
+     <div class="container">
           <div class="row">
-              <div class="col-md-10">
+              <div class="col-md-8" id="receipt">
                   
-                    <p style="text-align:center">
+                    <p>
                         LIBRASUN SNACKS<br/>
                         Mld Valley City,<br/>
                         Lingkaran Syed Putra,<br/>
@@ -29,8 +52,8 @@
                                  <td></td>
                             </tr>
                             <tr>
-                                 <td style="width:40px;border-top:dotted; border-bottom:dotted;">QTY</td>
-                                 <td style="border-top:dotted; border-bottom:dotted;">ITEM</td>
+                                 <td id="qty">QTY</td>
+                                 <td id="item">ITEM</td>
                                  <td>AMOUNT</td>
                             </tr>
                        </thead>
@@ -77,8 +100,7 @@
                      </tfoot>
                  </table>
                 
-                 <br/>
-                 <p style="text-align:center">
+                 <p>
                     CUSTOMER HOTLINE<br/>
                     (060)3 2298 7229<br/>
                     *** Thank You ***<br/>
