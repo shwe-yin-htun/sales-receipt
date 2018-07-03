@@ -8,8 +8,13 @@
 </head>
 <body>
     <div class="container" style="margin-top:20px;">
-     <div class="row">
-        <div class="col-md-10">
+       <div class="row">
+           <div class="col-md-10">
+                <h4 style="text-align:center;">Item Lists</h4>
+           </div>
+       </div><br/>
+      <div class="row">
+        <div class="col-md-12">
             <a href="{{url('itemset')}}" class="btn btn-success float-right" id="create-set">Create Set</a>
             <button class="btn btn-success float-right" id="new-item" style="margin-right:20px;">New Item</button>
            
@@ -43,6 +48,7 @@
                         @endforeach
                     </tbody>
                 </table>
+                {{ $items->links() }}
             </div>
         </div>
 
@@ -178,23 +184,25 @@
             });
 
             $(this).find('td button#delete').click(function(){  // for delete button
-                var id= $(this).attr('data-id');
-                var tr=$(this).closest('tr');
-                $.ajax({
-                        type: 'delete',
-                        url: 'api/item/'+id,
-                        dataType: 'json',
-                        success: function( response ){
-                            if(response.data){
-                                tr.remove();
-                            }else{
-                                alert('Something went wrong!');
-                            } 
-                        },
-                        error : function(error){
-                            console.log(error);
-                        }
-                });         
+                if(confirm("Are you sure to delete ?")){
+                    var id= $(this).attr('data-id');
+                    var tr=$(this).closest('tr');
+                    $.ajax({
+                            type: 'delete',
+                            url: 'api/item/'+id,
+                            dataType: 'json',
+                            success: function( response ){
+                                if(response.data){
+                                    tr.remove();
+                                }else{
+                                    alert('Something went wrong!');
+                                } 
+                            },
+                            error : function(error){
+                                console.log(error);
+                            }
+                    });         
+                }
             })
        });    
     }

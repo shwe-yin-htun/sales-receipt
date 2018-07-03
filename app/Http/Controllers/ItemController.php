@@ -20,7 +20,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $data=$this->item->all();
+        $data=$this->item->latest()->paginate(5);
         return view('templates.items',['items'=>$data]);
     }
 
