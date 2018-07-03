@@ -34,7 +34,7 @@
                                 </select>
                         </div>
                         <div class="col-md-4">
-                                <a href="{{'itemset'}}" class="btn btn-success float-right">Create Set</a>
+                                <a href="{{'itemset'}}" class="btn btn-success float-right"><i class="fa fa-plus" aria-hidden="true"></i>Create Set</a>
                                 <a href="{{'item'}}" class="btn btn-success float-right" style="margin-right:5%">Create Item</a>
                         </div>
                     </div><br/>

@@ -11,6 +11,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 
     <!-- jQuery library -->
     <script src="{{asset('js/jquery.min.js')}}"></script>
