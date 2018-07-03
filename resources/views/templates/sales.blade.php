@@ -34,8 +34,12 @@
                                 </select>
                         </div>
                         <div class="col-md-4">
-                                <a href="{{'itemset'}}" class="btn btn-success float-right"><i class="fa fa-plus" aria-hidden="true"></i>Create Set</a>
-                                <a href="{{'item'}}" class="btn btn-success float-right" style="margin-right:5%">Create Item</a>
+                                <a href="{{'itemset'}}" class="btn btn-success float-right">
+                                    <i class="fa fa-plus" aria-hidden="true"></i> Create Set
+                                </a>
+                                <a href="{{'item'}}" class="btn btn-success float-right" style="margin-right:5%">
+                                   <i class="fa fa-plus" aria-hidden="true"></i> Create Item
+                                </a>
                         </div>
                     </div><br/>
                   <table class="table  table-hover table-bordered" id="receipt">
@@ -80,7 +84,9 @@
                       </tfoot>
                   </table>
 
-                  <input type="submit" id="checkout" value="Checkout" class="btn btn-success float-right">
+                  <button type="submit" id="checkout" class="btn btn-success float-right">
+                      <i class="fa fa-money" aria-hidden="true"></i> CheckOut
+                  </button>
              </form>
               </div>
           </div><br/>

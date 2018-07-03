@@ -15,9 +15,11 @@
        </div><br/>
       <div class="row">
         <div class="col-md-12">
-            <a href="{{url('itemset')}}" class="btn btn-success float-right" id="create-set">Create Set</a>
+            <a href="{{url('itemset')}}" class="btn btn-success float-right" id="create-set">
+              <i class="fa fa-plus" aria-hidden="true"></i> Create Set
+            </a>
             <button class="btn btn-success float-right" id="new-item" style="margin-right:20px;">
-                New Item
+               <i class="fa fa-plus" aria-hidden="true"></i> New Item
             </button>
            
         </div>
@@ -43,8 +45,12 @@
                                 <td id="td_price">{{$item->price}}</td>
                                 <td>{{$item->is_set}}</td>
                                 <td>
-                                    <button class="btn btn-success" id="edit" data-id="{{$item->id}}">Edit</button>
-                                    <button class="btn btn-danger" id="delete" data-id="{{$item->id}}">Delete</button>
+                                    <button class="btn btn-success" id="edit" data-id="{{$item->id}}">
+                                        <i class="fa fa-edit" aria-hidden="true"></i> 
+                                    </button>
+                                    <button class="btn btn-danger" id="delete" data-id="{{$item->id}}">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> 
+                                    </button>
                                 </td>
                             </tr>
                         @endforeach
@@ -77,7 +83,9 @@
                         <input type="text" class="form-control" id="price" >
                         <span style="color:red" id="price_err"></span>
                     </div>
-                    <button class="btn btn-primary" id="save" data-id="">Save</button>
+                    <button class="btn btn-primary" id="save" data-id="">
+                       <i class="fa fa-floppy-o" aria-hidden="true"></i> Save
+                    </button>
                 </div>
                 
               </div>

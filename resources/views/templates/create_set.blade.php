@@ -19,7 +19,9 @@
                     @endforeach
                     <br/><input type="text" class="form-control" value="00.00" id="price" plcaeholder="Set's Price">
                     <span style="color:red" id="price_err"></span><br/>
-                    <br/><input type="button" class="btn btn-success" id="create-set" value="Create">
+                    <br/><button class="btn btn-success" id="create-set" >
+                            <i class="fa fa-plus-square" aria-hidden="true"></i> Create
+                        </button>
                </div>
                
             </div><br/>
