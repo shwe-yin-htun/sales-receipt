@@ -1,6 +1,20 @@
 @extends('master')
 @section('content')
-
+<style>
+.select2-container--default .select2-selection--single {
+       background-color: #fff;
+       border: 1px solid #aaa;
+       border-radius: 4px;
+       height: 36px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+       height: 26px;
+       position: absolute;
+       top: 5px !important;
+       right: 1px;
+       width: 20px;
+}
+</style>
     <div class="container" style="margin-top:20px;">
           <div class="row">
                <div class="col-md-10" >
@@ -19,8 +33,9 @@
                                 <select class="js-data-example-ajax form-control sel_item">
                                 </select>
                         </div>
-                        <div class="col-md-3">
-                                <a href="{{'item'}}" class="btn btn-success float-right">Create Item</a>
+                        <div class="col-md-4">
+                                <a href="{{'itemset'}}" class="btn btn-success float-right">Create Set</a>
+                                <a href="{{'item'}}" class="btn btn-success float-right" style="margin-right:5%">Create Item</a>
                         </div>
                     </div><br/>
                   <table class="table  table-hover table-bordered" id="receipt">
@@ -31,7 +46,7 @@
                               <th style="width:24%;">Price</th>
                               <th style="width:12%;">Qty</th>
                               <th style="width:24%;">Amount</th>
-                              <th>-</th>
+                              <th style="width:4%;">-</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -118,7 +133,7 @@
                                             "<td><input type='text' id='price'class='form-control' value='"+response.data.price+"' readonly></td>"+
                                             "<td><input type='text' id='qty' name='qty[]' value='1' class='form-control'></td>"+
                                             "<td><input type='text' id='amount' value='"+response.data.price+"' class='form-control' readonly></td>"+
-                                            "<td><button id='remove' class='btn btn-danger' >X</button>"+
+                                            "<td><button id='remove' class='btn btn-link btn-sm' >X</button>"+
                                             "</td><input type='hidden' name='id[]' value='"+response.data.id+"'></tr>";
                                     $('table#receipt > tbody').append(tr);
                                     calculation();

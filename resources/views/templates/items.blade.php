@@ -1,10 +1,10 @@
 @extends('master')
 @section('content')
-    <style>
-         #item-model{
-             margin-left:40%;
-         }
-    </style>
+<style>
+#item-model{
+    margin-left:40%;
+}
+</style>
 </head>
 <body>
     <div class="container" style="margin-top:20px;">
@@ -16,7 +16,9 @@
       <div class="row">
         <div class="col-md-12">
             <a href="{{url('itemset')}}" class="btn btn-success float-right" id="create-set">Create Set</a>
-            <button class="btn btn-success float-right" id="new-item" style="margin-right:20px;">New Item</button>
+            <button class="btn btn-success float-right" id="new-item" style="margin-right:20px;">
+                New Item
+            </button>
            
         </div>
         </div><br/>
@@ -29,7 +31,7 @@
                             <th>Item Name</th>
                             <th>Price</th>
                             <th>Is_Set</th>
-                            <th>Actions</th>
+                            <th style="width:20%">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
