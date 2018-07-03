@@ -6,22 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Point Of Sales System</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <script src="{{asset('js/app.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
-
-    <!-- jQuery library -->
-    <script src="{{asset('js/jquery.min.js')}}"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-
-    <!-- Select2 js ans css -->
-    <link href="{{asset('css/select2.min.css')}}" rel="stylesheet" />
-    <script src="{{asset('js/select2.min.js')}}"></script>
 
 <body>
         <div>
