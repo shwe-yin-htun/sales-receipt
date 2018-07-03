@@ -158,6 +158,7 @@
     function fetchItem(){
         $( "table#item-lists > tbody > tr " ).each( function() {
             $(this).find('td button#edit').click(function(){   // for edit button
+                clear();
                 var id= $(this).attr('data-id');
                 $('#save').attr('data-id',id);
                 $.ajax({

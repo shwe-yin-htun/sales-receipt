@@ -3,30 +3,34 @@
 
     <div class="container" style="margin-top:20px;">
           <div class="row">
-            
+               <div class="col-md-10" >
+                 <h3 style="text-align:center">Point Of Sales System</h3>
+               </div>
+          </div><br/>
+          <div class="row">
               <div class="col-md-10" id="content">
                 <form id="receipt-form">
                     <div class="row">
-                            <div class="col-md-3">
-                                    <input type="text" class="form-control" name="receipt_no" placeholder="Receipt Number"><br/>
-                                    <span style="color:red" id="receipt_err"></span>
-                            </div>
-                            <div class="col-md-3 ">
-                                    <select class="js-data-example-ajax form-control sel_item">
-                                    </select>
-                            </div>
-                            <div class="col-md-3">
-                                    <a href="{{'item'}}" class="btn btn-success float-right">Create Item</a>
-                            </div>
+                        <div class="col-md-4">
+                                <input type="text" class="form-control" name="receipt_no" placeholder="Receipt Number">
+                                <span style="color:red" id="receipt_err"></span><br/>
+                        </div>
+                        <div class="col-md-4 ">
+                                <select class="js-data-example-ajax form-control sel_item">
+                                </select>
+                        </div>
+                        <div class="col-md-3">
+                                <a href="{{'item'}}" class="btn btn-success float-right">Create Item</a>
+                        </div>
                     </div><br/>
                   <table class="table  table-hover table-bordered" id="receipt">
                       <thead>
                           <tr>
                               <th>No.</th>
                               <th>Item Name</th>
-                              <th>Price</th>
-                              <th>Qty</th>
-                              <th>Amount</th>
+                              <th style="width:24%;">Price</th>
+                              <th style="width:12%;">Qty</th>
+                              <th style="width:24%;">Amount</th>
                               <th>-</th>
                           </tr>
                       </thead>
@@ -37,25 +41,25 @@
                             <tr>
                                 <td colspan="3"></td>
                                 <td>Sub Total</td>
-                                <td><input type="text" name="sub_total" id="sub-total" value="00.00"  readonly></td>
+                                <td><input type="text" class="form-control" name="sub_total" id="sub-total" value="00.00"  readonly></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td colspan="3"></td>
                                 <td>Discount</td>
-                                <td><input type="text" value="0" name="disc" id="disc"></td>
+                                <td><input type="text" class="form-control" value="0" name="disc" id="disc"></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td colspan="3"></td>
                                 <td>Grand Total</td>
-                                <td><input type="text" value="00.00" name="g_total" id="g-total" readonly></td>
+                                <td><input type="text" class="form-control" value="00.00" name="g_total" id="g-total" readonly></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td colspan="3"></td>
                                 <td>Cash</td>
-                                <td><input type="text" value="00.00" name="cash" id="cash" readonly></td>
+                                <td><input type="text" class="form-control" value="00.00" name="cash" id="cash" readonly></td>
                                 <td></td>
                             </tr>
                       </tfoot>
@@ -111,9 +115,9 @@
                                if(existed_item.length==0){// haven't appended item
                                         var tr="<tr key='"+response.data.id+"'><td>"+len+"</td>"+
                                             "<td>"+response.data.name+"</td>"+
-                                            "<td><input type='text' id='price' value='"+response.data.price+"' readonly></td>"+
-                                            "<td><input type='text' id='qty' name='qty[]' value='1' ></td>"+
-                                            "<td><input type='text' id='amount' value='"+response.data.price+"' readonly></td>"+
+                                            "<td><input type='text' id='price'class='form-control' value='"+response.data.price+"' readonly></td>"+
+                                            "<td><input type='text' id='qty' name='qty[]' value='1' class='form-control'></td>"+
+                                            "<td><input type='text' id='amount' value='"+response.data.price+"' class='form-control' readonly></td>"+
                                             "<td><button id='remove' class='btn btn-danger' >X</button>"+
                                             "</td><input type='hidden' name='id[]' value='"+response.data.id+"'></tr>";
                                     $('table#receipt > tbody').append(tr);

@@ -1,6 +1,11 @@
 @extends('master')
 @section('content')
-     <div class="container" style="margin-top:20px;">
+     <div class="container " style="margin-top:20px;">
+            <div class="row">
+                 <div class="col-md-6">
+                     <h4>Select items and Create new set</h4>
+                 </div>
+            </div><br>
             <div class="row">
                <div class="col-md-3">
                     <input type="text" id="set-name" class="form-control" placeholder="Set-Name">
