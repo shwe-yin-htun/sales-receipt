@@ -128,8 +128,8 @@
                                     "<td>"+response.data.name+"</td>"+
                                     "<td>"+response.data.price+"</td>"+
                                     "<td>"+response.data.is_set+"</td>"+
-                                    "<td><button class='btn btn-success' id='edit' data-id='"+response.data.id+"'> <i class='fa fa-edit' aria-hidden='true'></i> </button>&nbsp;&nbsp;"+
-                                    "<button class='btn btn-danger' id='delete' data-id='"+response.data.id+"'> <i class='fa fa-edit' aria-hidden='true'></i> </button></td></tr>";
+                                    "<td><button class='btn btn-primary' id='edit' data-id='"+response.data.id+"'> <i class='fa fa-edit' aria-hidden='true'></i> </button>&nbsp;&nbsp;"+
+                                    "<button class='btn btn-danger' id='delete' data-id='"+response.data.id+"'> <i class='fa fa-trash' aria-hidden='true'></i> </button></td></tr>";
 
                            // clear();
                             $("#item-model").modal('hide');
